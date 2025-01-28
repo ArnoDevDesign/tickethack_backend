@@ -1,12 +1,13 @@
 const mongoose = require('mongoose');
 
 const tripSchema = mongoose.Schema({
-    name: String,
-    price: Number,
-    stock: Number,
-    weight: Number,
-    image: String
+    departure: String,
+    arrival: String,
+    date: Date,
+    price: Number
 });
+
+//penser aux clés étrangères pour trips vers carts et bookings
 
 const Trip = mongoose.model('trips', tripSchema);
 
