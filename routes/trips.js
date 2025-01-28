@@ -16,8 +16,6 @@ router.get("/", function (req, res) {
   })
 })
 
-
-
 /* POST all trips by departure (pas de GET car besoin de tester avec req.body.departure) */
 router.post("/", (req, res) => {
   // Valeur si les champs à remplir sont vides
