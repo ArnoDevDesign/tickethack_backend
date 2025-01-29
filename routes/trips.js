@@ -32,7 +32,7 @@ router.post("/", (req, res) => {
       $lt: moment.utc(req.body.date).endOf("day").toDate(),
     }
   })
-    //réponse en fonction des chams rentrés
+    //réponse en fonction des champs rentrés
     .then((data) => {
       if (data.length === 0) {
         res.json({ result: false, error: "No trip found" });
